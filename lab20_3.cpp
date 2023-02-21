@@ -8,7 +8,10 @@
 using namespace std;
 
 struct student{
-
+	string name;
+	int id;
+	string gender;
+	double gpa;
     //Define struct student with four member (name ,id , gender, gpa);
     
 };
@@ -63,7 +66,8 @@ int main(){
 	
 	while(getline(student_file,textline)){
 		student s; 
-		
+		string txt = " ";
+		char format [] = "%[^:]: %d %s %d ";
 		//Use sscanf() to split the values in textline and assign those values to the members of struct s;
 
 		allstudents.push_back(s); 		
